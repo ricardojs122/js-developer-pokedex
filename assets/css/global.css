@@ -26,10 +26,6 @@ body {
     }
 }
 
-.content .pokename {
-    color: rgb(56, 56, 194);
-    text-align: center;
-}
 @keyframes blink {
     0%, 100% {
         background-color: #007bff; 
@@ -55,3 +51,92 @@ body {
 }
 
 
+.content .pokename {
+    color: rgb(253, 253, 253);
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: 0.15em solid #000; 
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #000;
+    }
+}
+@media screen and (min-width: 992px) {
+    #pokemonDetails {
+        margin-top: 100px; 
+        background-color: rgb(27, 24, 24);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center; 
+        max-width: 1100px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+}
+
+
+
+#pokemonDetails h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize; 
+}
+
+#pokemonDetails p {
+    margin: 8px 0;
+    color: #ccc;
+    text-transform: capitalize; 
+}
+
+#pokemonDetails img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+#pokemonDetails img {
+    max-width: 200px; 
+    height: 200px;
+    margin-top: 20px; 
+}
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    background-color: #ef2b2b;
+}
+#backButton {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #f2b800;
+}

@@ -1,5 +1,5 @@
-
-class Pokemon {
+// pokemon-model.js
+ class Pokemon {
     number;
     name;
     type;
